@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8A381E141BE66E5A000299BE /* integration.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8A381E121BE66E5A000299BE /* integration.cpp */; };
 		8A76D5BE1BE1555E00D473FF /* weibull_estimator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8A76D5BD1BE1555E00D473FF /* weibull_estimator.cpp */; };
 		8A76D5C01BE156DA00D473FF /* weibull.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8A76D5BF1BE156DA00D473FF /* weibull.cpp */; };
 		8AA4CA3A1BE136D0006420DA /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8AA4CA391BE136D0006420DA /* main.cpp */; };
@@ -25,6 +26,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		8A381E121BE66E5A000299BE /* integration.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = integration.cpp; sourceTree = "<group>"; };
+		8A381E131BE66E5A000299BE /* integration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = integration.h; sourceTree = "<group>"; };
 		8A76D5B71BE13BC300D473FF /* weibull.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = weibull.h; sourceTree = "<group>"; };
 		8A76D5B91BE13C5D00D473FF /* weibull_estimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = weibull_estimator.h; sourceTree = "<group>"; };
 		8A76D5BD1BE1555E00D473FF /* weibull_estimator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = weibull_estimator.cpp; sourceTree = "<group>"; };
@@ -65,6 +68,8 @@
 			children = (
 				8AA4CA391BE136D0006420DA /* main.cpp */,
 				8A76D5B71BE13BC300D473FF /* weibull.h */,
+				8A381E121BE66E5A000299BE /* integration.cpp */,
+				8A381E131BE66E5A000299BE /* integration.h */,
 				8A76D5BF1BE156DA00D473FF /* weibull.cpp */,
 				8A76D5B91BE13C5D00D473FF /* weibull_estimator.h */,
 				8A76D5BD1BE1555E00D473FF /* weibull_estimator.cpp */,
@@ -128,6 +133,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A381E141BE66E5A000299BE /* integration.cpp in Sources */,
 				8AA4CA3A1BE136D0006420DA /* main.cpp in Sources */,
 				8A76D5BE1BE1555E00D473FF /* weibull_estimator.cpp in Sources */,
 				8A76D5C01BE156DA00D473FF /* weibull.cpp in Sources */,

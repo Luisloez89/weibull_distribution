@@ -20,7 +20,11 @@ Weibull::Weibull(float *_data, int _dataCount, float _beta, float _eta){
 
 float Weibull::weibullDistribution(float _x){
     
-    return (beta/eta)*pow((_x/eta),(beta-1))*exp(-(_x/eta));
+    return (beta/eta)*pow((_x/eta),(beta-1))*exp(-pow(_x/eta, beta));
+}
+
+float Weibull::mean(){
+    return eta;
 }
 
 float* Weibull::getDistribution(){
@@ -45,6 +49,8 @@ void Weibull::setData(float *_data){
 
 float Weibull::getBeta(){ return beta; }
 float Weibull::getEta(){ return eta; }
+
+
 
 
 

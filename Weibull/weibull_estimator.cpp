@@ -25,7 +25,7 @@ Estimator::Estimator(){
 
 void Estimator::rankRegressionY(){
     
-    float a = 0, b = 0;
+    float a = 0;
     float *medianRank = new float[dataCount];
     float *y= new float[dataCount];
     
@@ -45,7 +45,7 @@ void Estimator::rankRegressionY(){
     }
     
     this->beta = (t1 - t2*t3/dataCount)/(t4 - t2*t2/dataCount);
-    a = t3/dataCount-b*t2/dataCount;
+    a = t3/dataCount-beta*t2/dataCount;
     this->eta = exp(-a/beta);
     
 }
