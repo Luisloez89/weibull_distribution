@@ -10,10 +10,6 @@
 #include "weibull_estimator.h"
 #include "weibull.h"
 #include "integration.h"
-double fn(double &x)
-{
-    return x*x;
-}
 
 int main(int argc, const char * argv[]) {
     float *data, *y;
@@ -39,8 +35,4 @@ int main(int argc, const char * argv[]) {
     for (int i = 0; i<6; i++) {
         std::cout<<y[i]<<"\t";
     }
-    
-    Integration integration(100);
-    std::cout<<integration.integrate(fn, -10, 10);
-
 }
