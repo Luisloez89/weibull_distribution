@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8A76D5BE1BE1555E00D473FF /* weibull_estimator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8A76D5BD1BE1555E00D473FF /* weibull_estimator.cpp */; };
+		8A76D5C01BE156DA00D473FF /* weibull.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8A76D5BF1BE156DA00D473FF /* weibull.cpp */; };
 		8AA4CA3A1BE136D0006420DA /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8AA4CA391BE136D0006420DA /* main.cpp */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +25,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		8A76D5B71BE13BC300D473FF /* weibull.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = weibull.h; sourceTree = "<group>"; };
+		8A76D5B91BE13C5D00D473FF /* weibull_estimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = weibull_estimator.h; sourceTree = "<group>"; };
+		8A76D5BD1BE1555E00D473FF /* weibull_estimator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = weibull_estimator.cpp; sourceTree = "<group>"; };
+		8A76D5BF1BE156DA00D473FF /* weibull.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = weibull.cpp; sourceTree = "<group>"; };
 		8AA4CA361BE136D0006420DA /* Weibull */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Weibull; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AA4CA391BE136D0006420DA /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -58,6 +64,10 @@
 			isa = PBXGroup;
 			children = (
 				8AA4CA391BE136D0006420DA /* main.cpp */,
+				8A76D5B71BE13BC300D473FF /* weibull.h */,
+				8A76D5BF1BE156DA00D473FF /* weibull.cpp */,
+				8A76D5B91BE13C5D00D473FF /* weibull_estimator.h */,
+				8A76D5BD1BE1555E00D473FF /* weibull_estimator.cpp */,
 			);
 			path = Weibull;
 			sourceTree = "<group>";
@@ -119,6 +129,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8AA4CA3A1BE136D0006420DA /* main.cpp in Sources */,
+				8A76D5BE1BE1555E00D473FF /* weibull_estimator.cpp in Sources */,
+				8A76D5C01BE156DA00D473FF /* weibull.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -235,6 +247,7 @@
 				8AA4CA3F1BE136D0006420DA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
