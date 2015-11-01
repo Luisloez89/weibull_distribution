@@ -7,16 +7,17 @@
 //
 
 #include "weibull_estimator.h"
-#include <iostream>
 
 Estimator::Estimator(float *_data, int _dataCount){
     this->data = _data;
     this->dataCount = _dataCount;
+    beta = 0;
+    gamma = 0;
+    eta = 0;
 }
 
 Estimator::Estimator(){
     data = nullptr;
-    alpha = -1;
     beta = -1;
     gamma = -1;
     dataCount = -1;
@@ -24,7 +25,7 @@ Estimator::Estimator(){
 
 void Estimator::rankRegressionY(){
     
-    float a = 0, b = 0, c = 0;
+    float a = 0, b = 0;
     float *medianRank = new float[dataCount];
     float *y= new float[dataCount];
     
@@ -41,16 +42,25 @@ void Estimator::rankRegressionY(){
         t3 += y[i];
         t4 += (log(data[i])*log(data[i]));
         
-        //std::cout<<medianRank[i]<<"\t";
     }
     
-    b = (t1 - t2*t3/dataCount)/(t4 - t2*t2/dataCount);
-    
+    this->beta = (t1 - t2*t3/dataCount)/(t4 - t2*t2/dataCount);
     a = t3/dataCount-b*t2/dataCount;
-    
-    c = exp(-a/b);
-    
-    std::cout<<b<<"\t"<<a<<"\t"<<c;
-    
+    this->eta = exp(-a/beta);
     
 }
+
+void Estimator::setParams(float _beta, float _gamma, float _eta){
+    this->beta = _beta;
+    this->gamma = _gamma;
+    this->eta = _eta;
+}
+
+void Estimator::setDataCount(float _dataCount){ this->dataCount = _dataCount;   }
+void Estimator::setData(float *_data){  this->data = _data; }
+
+float Estimator::getBeta(){ return this->beta; }
+float Estimator::getEta(){ return this->eta; }
+float Estimator::getDataCount() { return this-> dataCount; }
+float* Estimator::getData() { return this->data; }
+
