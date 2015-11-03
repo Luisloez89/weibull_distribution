@@ -19,12 +19,7 @@ int main(int argc, const char * argv[])
     
     
     
-    data[0] = 16;
-    data[1] = 34;
-    data[2] = 53;
-    data[3] = 75;
-    data[4] = 93;
-    data[5] = 120;
+	readData("data_file.txt", data, 6);
     
     Estimator estimator(data, N);
     estimator.rankRegressionY();
