@@ -35,5 +35,5 @@ int main(int argc, const char * argv[])
         std::cout<<y[i]<<"\t";
     }
     
-    std::cout<<"\n"<<weibull.mean();
+    std::cout<<"\nMean"<<weibull.mean()<<"\n";
 }

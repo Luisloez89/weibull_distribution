@@ -9,7 +9,7 @@
 #include "integration.h"
 
 double fx(const double &_x, double _beta){
-    return (exp(-_x)*pow(_x,(1/_beta+1)));
+    return (exp(-_x)*pow(_x,(1/_beta+1)));         //Gamma Funtion
 }
 
 Weibull::Weibull(float *_data, int _dataCount, float _beta, float _eta){
@@ -22,7 +22,7 @@ Weibull::Weibull(float *_data, int _dataCount, float _beta, float _eta){
 
 float Weibull::weibullDistribution(float _x){
     
-    return (beta/eta)*pow((_x/eta),(beta-1))*exp(-pow(_x/eta, beta));
+    return (beta/eta)*pow((_x/eta),(beta-1))*exp(-pow(_x/eta, beta));  //Weibull PDF
 }
 
 float Weibull::mean(){
