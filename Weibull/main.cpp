@@ -9,7 +9,8 @@
 #include "weibull.h"
 #include "integration.h"
 
-int main(int argc, const char * argv[]) {
+int main(int argc, const char * argv[])
+{
     float *data, *y;
     
     data = new(float[6]);

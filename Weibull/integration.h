@@ -2,9 +2,7 @@
 //  integration.h
 //  Weibull
 //
-//  Created by Sanjiv  Soni on 01/11/15.
-//  Copyright (c) 2015 sunjiv. All rights reserved.
-//
+
 
 #ifndef __Weibull__integration__
 #define __Weibull__integration__

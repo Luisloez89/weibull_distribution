@@ -2,9 +2,6 @@
 //  weibull.cpp
 //  Weibull
 //
-//  Created by Sanjiv  Soni on 29/10/15.
-//  Copyright (c) 2015 sanjiv. All rights reserved.
-//
 
 #include <stdio.h>
 #include <math.h>

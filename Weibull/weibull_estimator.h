@@ -1,10 +1,7 @@
 //
 //  weibull_estimator.h
 //  Weibull
-//
-//  Created by Sanjiv  Soni on 28/10/15.
-//  Copyright (c) 2015 sanjiv. All rights reserved.
-//
+
 
 #ifndef __Weibull__weibull_estimator__
 #define __Weibull__weibull_estimator__
