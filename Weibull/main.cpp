@@ -8,6 +8,7 @@
 #include "weibull_estimator.h"
 #include "weibull.h"
 #include "integration.h"
+#include "readData.h"
 #define N 6
 
 int main(int argc, const char * argv[])
@@ -19,7 +20,7 @@ int main(int argc, const char * argv[])
     
     
     
-	readData("data_file.txt", data, 6);
+	readData("data_file.txt", data, N);
     
     Estimator estimator(data, N);
     estimator.rankRegressionY();

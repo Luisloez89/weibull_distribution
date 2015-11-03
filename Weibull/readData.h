@@ -20,4 +20,5 @@ bool readData(char *_fileName, float *_data, int _dataCount = -1)
 	else
 		for (int i = 0; i < _dataCount; i++)
 			file >> _data[k++];
+    return true;
 }
