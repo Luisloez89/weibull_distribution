@@ -30,9 +30,11 @@ int main(int argc, const char * argv[]) {
     Weibull weibull(data,6,estimator.getBeta(),estimator.getEta());
     y = weibull.getDistribution();
     
-    std::cout<<weibull.getEta()<<"\t"<<weibull.getBeta()<<"\n";
+    std::cout<<weibull.getEta()<<"  "<<weibull.getBeta()<<"\n";
     
     for (int i = 0; i<6; i++) {
         std::cout<<y[i]<<"\t";
     }
+    
+    std::cout<<"\n"<<weibull.mean();
 }
