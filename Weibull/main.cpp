@@ -36,4 +36,6 @@ int main(int argc, const char * argv[])
     }
     
     std::cout<<"\nMean"<<weibull.mean()<<"\n";
+
+	system("pause");
 }
