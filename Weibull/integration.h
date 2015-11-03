@@ -14,7 +14,7 @@ private:
     int intervals;
 public:
     Integration(const int &_intervals);
-    double integrate(double (*pfun)(const double &x), const double &upBound, const double &lowBound);
+    double integrate(double (*pfun)(const double &x, const double y), const double &upBound, const double &lowBound, const double beta);
     
     
 };

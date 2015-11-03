@@ -6,12 +6,17 @@
 #include <stdio.h>
 #include <math.h>
 #include "weibull.h"
+#include "integration.h"
+
+double fx(const double &_x, double _beta){
+    return (exp(-_x)*pow(_x,(1/_beta+1)));
+}
 
 Weibull::Weibull(float *_data, int _dataCount, float _beta, float _eta){
     
     this->dataCount = _dataCount;
     this->data = _data;
-    this->beta = _beta;
+    this->beta = _beta; 
     this->eta = _eta;
 }
 
@@ -21,7 +26,8 @@ float Weibull::weibullDistribution(float _x){
 }
 
 float Weibull::mean(){
-    return eta;
+    Integration integral(1000);
+    return eta*integral.integrate(fx, 0, 100000, beta);
 }
 
 float* Weibull::getDistribution(){
