@@ -33,5 +33,5 @@ int main(int argc, const char * argv[])
     
     std::cout<<"\nMean"<<weibull.mean()<<"\n";
 
-	system("pause"); //Not needed on Mac :p
+	system("pause"); //Not needed on Mac :p - I know
 }
